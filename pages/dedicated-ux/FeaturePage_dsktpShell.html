@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Pivot</title>
+    <!-- JavaScript Page redirection if not a 1920 x 1080 desktop -->
+    <script type="text/javascript">
+        // Detect if device resolution is 1920 x 1080 desktop
+        if (window.width < 1920 || window.height < 1080) {
+            // Redirect to a mobile or smaller version
+            window.location.replace("non-dsktp-redirect.html");
+        }
+        // Bugs alert
+        const isAtMaxWidth = window.outerWidth >= screen.availWidth;
+        const isAtMaxHeight = window.outerHeight >= screen.availHeight;
+        if (!isAtMaxWidth || !isAtMaxHeight) {
+            alert("Please maximize your browser window for the best experience. This website has bugs. It must be viewed on a Chrome browser in a non-minimzed mode. A window that only takes up part of the screen will look funny until it is maximized.");
+        }
+    </script>
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../css/feature-page.css">
+    <!-- Custom Media Queries -->
+    <link rel="stylesheet" href="../../css/custom-media.css">
+    <!-- Custom JavaScript -->
+    <script src="../../js/feature-page.js" defer></script>
+</head>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<body>
+    <!-- HEADER SECTION -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- ============================================================================================= -->
+    <div class="sp-header">
+        <div class="logo-container">
+            <img src="../../images/main-icons/SP_Logo_WhiteSquareBG.png" alt="Strategic Pivot Logo" class="logo">
+        </div>
+        <div class="chi-column">
+            <h1>Strategic Pivot</h1>
+            <table style="margin:0 1rem;">
+                <tr>
+                    <td style="text-align:right;">
+                        <div class="sp-nav-button-dropdown">
+                            <button class="sp-nav-button">Projects Group <i class="fa-solid fa-chevron-down"></i></button>
+                            <div class="main-dropdown-menu">
+                                <div>
+                                    <div class="dropdown-heading">By Year</div>
+                                    <div class="dropdown-links">
+                                        <a href="#" class="link">2024</a>
+                                        <a href="#" class="link">2025</a>
+                                        <a href="#" class="link">2026</a>
+                                        <a href="#" class="link">2027</a>
+                                        <a href="#" class="link">Older Search</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dropdown-heading">Open Bids/Pitches</div>
+                                    <div class="dropdown-links">
+                                        <a href="#" class="link">SP Board Projects</a>
+                                        <a href="#" class="link">Political Projects</a>
+                                        <a href="#" class="link">General Open Projects</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td><h3 style="top:-.2rem;left:.1rem;">@-Selected-Year-2026</h3></td>
+                </tr>
+                <tr>
+                    <td style="text-align:right;">
+                        <div class="sp-nav-button-dropdown">
+                            <button class="sp-nav-button">Priority <i class="fa-solid fa-chevron-down"></i></button>
+                            <div class="main-dropdown-menu">
+                                <div>
+                                    <div class="dropdown-heading">Political Priorities</div>
+                                    <div class="dropdown-links">
+                                        <a href="#" class="link">Project Mgmt & Engagement Platform</a>
+                                        <a href="#" class="link">Cyber Force</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dropdown-heading">Presidential Priorities</div>
+                                    <div class="dropdown-links">
+                                        <a href="#" class="link">Advanced Psychology Grid</a>
+                                        <a href="#" class="link">Interactive Tax Program</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dropdown-heading">Industrial Priorities</div>
+                                    <div class="dropdown-links">
+                                        <a href="#" class="link">Identity Products</a>
+                                        <a href="#" class="link">Helm Architecture</a>
+                                        <a href="#" class="link">UPC & Accounting Automation</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dropdown-heading">CVO Priorities</div>
+                                    <div class="dropdown-links">
+                                        <a href="#" class="link">Lithography & MicroChip</a>
+                                        <a href="#" class="link">Battery Technology</a>
+                                        <a href="#" class="link">Solar Panel Production</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td><h3 style="top:-.2rem;left:.1rem;">@-Selected-National Project Management and Engagement Eco-System</h3></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- The Central section is composed of two main parts: the feature section on the left and the WebGL aside on the right -->
+    <!-- These elements are made hidden and visible by controlling the following IDs: -->
+    <!-- feature-section-navs-docked : webGL-aside-docked : linked-content-nav-docked ~~> Toggle in sets -->
+    <!-- feature-section-navs-opened : webGL-aside-opened : linked-content-nav-opened ~~> Toggle in sets -->
+    <!-- DESIGN NOTE: The page will open with feature-section-navs-docked, webGL-aside-docked, and linked-content-nav-docked visible, then after 3 seconds automatically toggle to the opened state -->
+
+    <!-- Div to flex content side by side -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div style="display: flex;">
+        <!-- FEATURE 1/4 -> LEFT SECTION; ALWAYS VISIBLE BUT CHANGES SIZES -> SIDE-NAV CLOSED VIEW / LARGER -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- ============================================================================================= -->
+        <div id="feature-section-navs-docked">
+            <div class="feature-header">
+                <div class="feature-filters-docked">
+                    <div class="sp-nav-button-dropdown">
+                        <button class="sp-nav-button" style="padding:0.2rem;margin:0.2rem;">Presentation Mode <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="main-dropdown-menu">
+                            <div>
+                                <div class="dropdown-heading">Sort Posts</div>
+                                <div class="dropdown-links">
+                                    <a href="#" class="link">Owner Arranged</a>
+                                    <a href="#" class="link">By Date - ASC</a>
+                                    <a href="#" class="link">By Date - DESC</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sp-nav-button-dropdown">
+                        <button class="sp-nav-button" style="padding:0.2rem;margin:0.2rem;">Sort Comments <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="main-dropdown-menu">
+                            <div>
+                                <div class="dropdown-heading">By % Understood</div>
+                                <div class="dropdown-links">
+                                    <a href="#" class="link">Focused:90% - General:50%</a>
+                                    <a href="#" class="link">Focused:75% - General:30%</a>
+                                    <a href="#" class="link">Focused:50% - General:10%</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown-heading">Other</div>
+                                <div class="dropdown-links">
+                                    <a href="#" class="link">By Most Liked</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-alerts-pane-docked">
+                    <p style="position:relative;top:-.6rem;transform:skew(10deg);font-weight:bold;color:var(--primary-text-color);">@-User-defined-scrollable-message-which-I'm-making-long-for-test-purposes.</p>
+                </div>
+            </div>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="feature-scroll-bg-docked">
+                <div class="feature-scroll-section">
+
+                </div>
+            </div>
+        </div>
+
+        <!-- FEATURE DEFAULT 2/4 -> LEFT SECTION; ALWAYS VISIBLE BUT CHANGES SIZES -> SIDE-NAV OPEN VIEW / SMALLER -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- ============================================================================================= -->
+        <div id="feature-section-navs-opened">
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="feature-header">
+                <div class="feature-filters-opened">
+                    <div class="sp-nav-button-dropdown">
+                        <button class="sp-nav-button" style="padding:0.2rem;margin:0.2rem;">Presentation Mode <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="main-dropdown-menu">
+                            <div>
+                                <div class="dropdown-heading">Sort Posts</div>
+                                <div class="dropdown-links">
+                                    <a href="#" class="link">Owner Arranged</a>
+                                    <a href="#" class="link">By Date - ASC</a>
+                                    <a href="#" class="link">By Date - DESC</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sp-nav-button-dropdown">
+                        <button class="sp-nav-button" style="padding:0.2rem;margin:0.2rem;">Sort Comments <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="main-dropdown-menu">
+                            <div>
+                                <div class="dropdown-heading">By % Understood</div>
+                                <div class="dropdown-links">
+                                    <a href="#" class="link">Focused:90% - General:50%</a>
+                                    <a href="#" class="link">Focused:75% - General:30%</a>
+                                    <a href="#" class="link">Focused:50% - General:10%</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown-heading">Other</div>
+                                <div class="dropdown-links">
+                                    <a href="#" class="link">By Most Liked</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-alerts-pane-opened">
+                    <p style="position:relative;top:-.6rem;transform:skew(10deg);font-weight:bold;color:var(--primary-text-color);">@-User-defined-scrollable-message-which-I'm-making-long-for-test-purposes.</p>
+                </div>
+            </div>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="feature-scroll-bg-opened">
+                <div class="feature-scroll-section">
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- FEATURE ASIDE 3/4 -> RIGHT SECTION; HIDES WITH BOTTOM -> SIDE-NAV CLOSED VIEW -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- ============================================================================================= -->
+        <div id="webGL-aside-docked">
+            <div class="DCKhlhtSqr" style="top: -3.3vh; left: 1.4vw; border-bottom: .6vh solid var(--accent3); border-right: .5vw solid var(--accent3);">
+                <div class="unpDCKcurveUPaway"></div>
+            </div>
+
+            <div class="unpDCKpicPane">
+                <div class="DCKpicSweep">
+                    <div class="unpDCKpic" style="background-image: url('../../images/user-profile/BrandonHelm2.jpg');"></div>
+                </div>
+            </div>
+
+            <div class="DCKhlhtSqr" style="top: 54.1vh; left: 1.4vw; border-top: .6vh solid var(--accent3); border-right: .5vw solid var(--accent3);">
+                <div class="unpDCKcurveDWNaway"></div>
+            </div>
+        </div>
+
+        <!-- FEATURE DEFAULT ASIDE 4/4 -> RIGHT SECTION; HIDES WITH BOTTOM -> SIDE-NAV OPEN VIEW -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- ============================================================================================= -->
+        <div id="webGL-aside-opened">
+
+        </div>
+
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    </div> <!-- Div to flex content side by side -->
+
+    <!-- FEATURE FOOTER 1/2 -> BOTTOM SECTION; HIDES WITH SIDE-NAV -> SIDE-NAV CLOSED VIEW -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- ============================================================================================= -->
+    <div id="linked-content-nav-docked">
+        <div class="footerPane_DCK">
+
+            <div class="DCKhlhtSqr" style="top: 3.1vh; left: -1.85vw; border-bottom: .6vh solid var(--accent3); border-right: .5vw solid var(--accent3);">
+                <div class="ftrDCKcurveLFTaway"></div>
+            </div>
+
+            <div class="ftrDCKpicPane">
+                <div class="ftrPicSweep">
+                </div>
+                <div class="ftrDCKpic" style="background-image: url('../../images/main-icons/SP_Logo_Silhouette.png'); left: 1.7vw;"></div>
+            </div>
+
+            <div class="DCKhlhtSqr" style="top: 3.1vh; left: 85.25vw; border-left: .4vw solid var(--accent3);">
+                <div class="ftrDCKcurveRHTaway"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FEATURE DEFAULT FOOTER 2/2 -> BOTTOM SECTION; HIDES WITH SIDE-NAV -> SIDE-NAV OPEN VIEW -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- ============================================================================================= -->
+    <div id="linked-content-nav-opened">
+        <div class="lc-nav-left-scroll-bg">
+            <div class="linked-content-nav-pane">
+
+            </div>
+
+        </div>
+        <div class="lc-nav-middle">
+
+        </div>
+        <div class="lc-nav-close-div">
+            <div id="lc-nav-close-btn" onclick="toggleFeaturePageNavs()">
+                <p>C<br>L<br>O<br>S<br>E</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
